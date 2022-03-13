@@ -1,0 +1,109 @@
+:root{
+    --box-background: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokeball{
+    height: 8vh;
+    margin: 0 0 -10px;
+
+}
+#btn-search{
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(251, 28, 28);
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 18px;  
+}
+
+#btn-search:hover{
+    background-color: rgb(248, 122, 5);
+    cursor: pointer;
+}
+
+#poke-search{
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;   
+    
+    background-color: #dcdcdc;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+hr{
+    border: 1px solid #ffffff;
+}
+
+.poke-name, .poke-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: var(--box-background);
+    margin: 15px;
+    padding: 0 15px;
+    background-color: #fafafa;
+
+}
+
+.poke-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-pokemon{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    display: none;
+    background: rgba( 5, 68, 42, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    
+}
+.pokemon-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+#poke-photo{
+    height: 25vh;
+}
+
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.abilities-name{
+    border-bottom: 1px solid #000000;
+}
