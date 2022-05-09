@@ -4,6 +4,27 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1610692567145-2c1fe6bf9c3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+h3{
+    margin-block: 5px;
+    text-align: center;
+    background-color: hsla(0, 0%, 98%, 0.5);
+    border-radius: 5px;
+}
+
+hr{
+    border: 1px solid #ffffff;
 }
 
 .container{
@@ -13,11 +34,14 @@ body {
     align-items: center;
 }
 
-#pokeball{
-    height: 8vh;
-    margin: 0 0 -10px;
 
+#poke-search{
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
+
 #btn-search{
     margin-left: 15px;
     padding: 10px;
@@ -33,22 +57,6 @@ body {
     cursor: pointer;
 }
 
-#poke-search{
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 18px;   
-    
-    background-color: #dcdcdc;
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 35px;
-}
-hr{
-    border: 1px solid #ffffff;
-}
 
 .poke-name, .poke-type{
     display: flex;
@@ -59,6 +67,7 @@ hr{
     margin: 15px;
     padding: 0 15px;
     background-color: #fafafa;
+    text-transform: capitalize;
 
 }
 
@@ -67,6 +76,7 @@ hr{
     justify-content: space-between;
     align-items: center;
 }
+
 .inputs{
     display: flex;
     justify-content: center;
@@ -78,23 +88,22 @@ hr{
     margin-top: 20px;
     padding: 15px;
     display: none;
-    background: rgba( 5, 68, 42, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 1.5px );
-    -webkit-backdrop-filter: blur( 1.5px );
-    border-radius: 10px;
-    
 }
+.card-pokemon.display{
+    display: block;
+    background-color: rgba(211,211,211, 0.7);
+}
+
 .pokemon-list{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
 }
+
 #poke-photo{
     height: 25vh;
 }
-
 
 li{
     display: flex;
@@ -102,8 +111,10 @@ li{
     align-items: center;
 }
 
-
-
 .abilities-name{
-    border-bottom: 1px solid #000000;
+    border-radius: 10px;
+    padding-inline: 5px;
+    margin-block: 5px;
+    text-transform: capitalize;
+    font-weight: 800;
 }
