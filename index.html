@@ -14,18 +14,16 @@
     <title>PokeSearch</title>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <div class="search">
-            <h2>PokeSearch</h2>
-            <div class="inputs">
-                <input style="text-align: center;" type="text" id="poke-search" placeholder="Type a pokemon name.." required>
-                <button type="submit" id="btn-search">Search</button>
-            </div>
-            <div class="card-pokemon"></div>    
-        </div>
-      
-    </div>
-    
-    <script src="./src/js/scripts.js"></script>
+            <h2 class="title">PokeSearch</h2>
+            <form class="pokemon-search">
+                <input type="text" id="poke-search" placeholder="Type a pokemon name.." required>
+                <button type="submit" class="btn-search">Search</button>
+            </form>
+            <div class="pokemon-card"></div>    
+        </div> 
+    </main>
+    <script type="module" src="./src/js/scripts.js"></script>
 </body>
 </html>
