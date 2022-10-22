@@ -10,14 +10,15 @@ body {
     background-repeat: no-repeat;
 }
 
-h2{
+.title{
     color: #fff;
     text-align: center;
     margin-bottom: 30px;
     font-size: 35px;
 }
-h3{
-    margin-block: 5px;
+
+.info{
+    padding-block: 5px;
     text-align: center;
     background-color: hsla(0, 0%, 98%, 0.5);
     border-radius: 5px;
@@ -40,9 +41,10 @@ hr{
     font-size: 18px;
     border: 1px solid #000000;
     border-radius: 10px;
+    text-align: center;
 }
 
-#btn-search{
+.btn-search{
     margin-left: 15px;
     padding: 10px;
     border-radius: 10px;
@@ -52,13 +54,12 @@ hr{
     font-size: 18px;  
 }
 
-#btn-search:hover{
+.btn-search:hover{
     background-color: rgb(248, 122, 5);
     cursor: pointer;
 }
 
-
-.poke-name, .poke-type{
+.poke-infos, .poke-type p{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,30 +69,39 @@ hr{
     padding: 0 15px;
     background-color: #fafafa;
     text-transform: capitalize;
-
+    font-weight: bolder;
 }
 
-.poke-name{
+.poke-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.poke-infos{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.inputs{
+.pokemon-search{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card-pokemon{
+.pokemon-card{
     border: 2px solid #000000;
     border-radius: 10px;
     margin-top: 20px;
     padding: 15px;
     display: none;
 }
-.card-pokemon.display{
-    display: block;
+.pokemon-card.display{
+    display: flex;
     background-color: rgba(211,211,211, 0.7);
+    flex-direction: column;
+    gap: 10px;
 }
 
 .pokemon-list{
@@ -99,16 +109,6 @@ hr{
     justify-content: center;
     align-items: center;
     margin-left: 10px;
-}
-
-#poke-photo{
-    height: 25vh;
-}
-
-li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .abilities-name{
